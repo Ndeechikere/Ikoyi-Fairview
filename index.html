@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Home - FairView Apartments Ikoyi</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&display=swap" rel="stylesheet">
+
+    <style>
+      #navg{
+        background-color:teal;
+      }
+
+      #logo1{
+        max-width:100%;
+      }
+
+      #logobrand{
+        padding-top: .7rem;
+        padding-bottom: .7rem;
+      }
+
+      .navbar-toggler:focus, .navbar-toggler:hover {
+        border: 1px outset goldenrod; 
+      }
+
+      .navbar .nav-item:not(:last-child) {
+        margin-right: 35px;
+      }
+
+      .nav-item:last-child {
+        margin-right: 100px;
+      }
+      
+      .dropdown-toggle::after {
+        transition: transform 0.15s linear; 
+      }
+      
+      .show.dropdown .dropdown-toggle::after {
+        transform: translateY(3px);
+      }
+
+      .dropdown-menu {
+        margin-top: 0;
+      }
+
+      .navbar-dark .navbar-nav .nav-link {
+        color: goldenrod;
+        font-family: 'Alata', sans-serif;
+      }
+
+      .navbar-dark .navbar-nav .nav-link:focus,
+      .navbar-dark .navbar-nav .nav-link:hover {
+          color: gold;
+      }
+
+      .navbar-dark .navbar-nav .nav-link.disabled {
+          color: rgba(255, 255, 255, .25)
+      }
+
+      .navbar-dark .navbar-nav .active>.nav-link,
+      .navbar-dark .navbar-nav .nav-link.active,
+      .navbar-dark .navbar-nav .nav-link.show,
+      .navbar-dark .navbar-nav .show>.nav-link {
+          color: gold;
+      }
+
+      .jumbotron{
+        background-image: url(Images/fairview_building.jpg);
+        background-size: cover;
+        margin-bottom: 0;
+
+
+      }
+
+      .customback{
+        background-color: rgba(217, 221, 223, 0.75);
+        padding: 20px;
+      }
+
+      .customback>h1{
+        font-family: 'Alata', sans-serif;
+      }
+
+      .customback>p{
+        font-family: 'Dosis', sans-serif;
+        font-weight: 400;
+        color: rgb(2, 80, 80);
+      }
+
+      #more{
+        text-decoration: none;
+        color:rgb(94, 68, 4)
+      }
+      #more:hover{
+        text-decoration: underline;
+        color: rgb(2, 80, 80);
+      }
+
+      .btn-primary {
+        color: rgb(248, 181, 11);
+        background-color:  rgb(23, 133, 133);
+        border-color:rgb(248, 181, 11);
+        font-family: 'Alata', sans-serif;
+      }
+
+      .btn-primary:hover{
+        color: rgb(23, 133, 133);
+        background-color: rgb(248, 181, 11);
+        border-color: rgb(23, 133, 133);
+      }
+
+      @media (min-width:576px) {
+      .jumbotron {
+        padding: 8rem 2rem;
+        }
+      }
+
+      #foot{
+        background-color: teal;
+
+      }
+
+      .list-group-item{
+        background-color: transparent;
+        border: 0;
+        color: white;
+      }
+      .list-group{
+        text-align: left;
+      }
+      
+      @media (min-width:576px) {
+      .list-group-item {
+        padding-left: 7.25rem;
+        }
+      }
+
+      .text-uppercase{
+        color: rgb(189, 137, 7);
+        font-family: 'Joselin', sans-serif;
+      }
+
+      #footlinks a{
+        margin-bottom: 2.2rem;
+      }
+      
+     
+
+
+
+      
+  
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-sm navbar-dark" id="navg"
+    >
+      <a class="navbar-brand" href="#" id="logobrand"
+        ><img src="Images\fairview_logoa.png" alt="logo" id="logo1"
+      /></a>
+      <button
+        class="navbar-toggler d-lg-none"
+        id="butt1"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      ><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" id="customlink1" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="customlink2" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="customlink3" href="#">Our Apartments</a>
+          </li>
+          <li class="nav-item dropdown" id="customlink4">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdownId"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="true"
+              >More</a
+            >
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="#">Book a Room</a>
+                <a class="dropdown-item" href="#">Payment Details</a>
+                <a class="dropdown-item" href="#">Amenities</a>
+                <a class="dropdown-item" href="#">Contact Us</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="jumbotron">
+      <div class="customback">
+        <h1 class="display-4">Welcome to Ikoyi Fairview Apartments</h1>
+        <p class="lead">At fairview, your comfort and convenience are always our topmost priority. During your stay at Ikoyi Fairview Apartments, you'll be within walking distance of Lagos Motor Boat Club. We offer amazing features like free WiFi in public areas, free self-parking, plus breakfast (surcharge), free WiFi and a flat-screen TV in each room and many more facilities designed for your comfort and relaxation.</p>
+        <hr class="my-2">
+        <p><a href="#" id="more">More info</a></p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="#" role="button">View our Apartments</a>
+        </p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="#" role="button">Book a Room Now</a>
+        </p>
+      </div>
+    </div>
+
+    <footer class="text-center text-lg-start" id="foot">
+      <!-- Grid container -->
+      <div class="container p-4" >
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <span class="logo2"><img src="Images/fairview_logoa.png"></span>
+
+            <ul class="list-group">
+              <li class="list-group-item"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;+234-803-304-0633 – Lagos Nigeria</li>
+              <li class="list-group-item"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;+234-806-644-5251 – Lagos Nigeria</li>
+              <li class="list-group-item"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;+1-281-725-7318 – Houston Texas</li>
+              <li class="list-group-item"><i class="fa fa-envelope-open" aria-hidden="true"></i> &nbsp;&nbsp; fairviewbookings@yahoo.com</li>
+            </ul>
+          </div>
+          <!--Grid column-->
+    
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0" id="footlinks">
+            <h5 class="text-uppercase">HOT LINKS</h5>
+    
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-light">About Us</a>
+              </li>
+              <li>
+                <a href="#!" class="text-light">Our Apartments</a>
+              </li>
+              <li>
+                <a href="#!" class="text-light">Book a Room</a>
+              </li>
+              <li>
+                <a href="#!" class="text-light">Payment Details</a>
+              </li>
+              <li>
+                <a href="#!" class="text-light">Amenities</a>
+              </li>
+              <li>
+                <a href="#!" class="text-light">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2021 Copyright:
+        <a class="text-dark" href="#">Ikoyi Fairview Apartments</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const $dropdown = $(".dropdown");
+      const $dropdownToggle = $(".dropdown-toggle");
+      const $dropdownMenu = $(".dropdown-menu");
+      const showClass = "show";
+      
+      $(window).on("load resize", function() {
+        if (this.matchMedia("(min-width: 768px)").matches) {
+          $dropdown.hover(
+            function() {
+              const $this = $(this);
+              $this.addClass(showClass);
+              $this.find($dropdownToggle).attr("aria-expanded", "true");
+              $this.find($dropdownMenu).addClass(showClass);
+            },
+            function() {
+              const $this = $(this);
+              $this.removeClass(showClass);
+              $this.find($dropdownToggle).attr("aria-expanded", "false");
+              $this.find($dropdownMenu).removeClass(showClass);
+            }
+          );
+        } else {
+          $dropdown.off("mouseenter mouseleave");
+        }
+      });
+    </script>
+  </body>
+</html>
