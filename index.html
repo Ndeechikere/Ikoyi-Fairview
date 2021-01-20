@@ -110,10 +110,17 @@
         text-decoration: none;
         color:rgb(94, 68, 4)
       }
+
       #more:hover{
         text-decoration: underline;
         color: rgb(2, 80, 80);
       }
+
+      #more:active{
+        text-decoration: underline;
+        color: gold;
+      }
+
 
       .btn-primary {
         color: rgb(248, 181, 11);
@@ -130,8 +137,53 @@
 
       @media (min-width:576px) {
       .jumbotron {
-        padding: 8rem 2rem;
+        padding: 7rem 2rem 20rem 2rem;
         }
+      }
+
+      .map-container-7{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+        }
+        
+      .map-container-7 iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+        }
+
+      #contact{
+        font-family:  'Dosis', sans-serif;
+        font-weight: 400;
+        color: rgb(2, 80, 80);
+        margin: 4rem auto -20rem 1.25rem;
+      }
+
+      #send{
+        border-color: darkgoldenrod;
+        border-radius: 5px;
+        background-color: teal;
+        color: white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+        font-weight: bold;
+      }
+
+      #send:hover{
+        font-size: larger;
+        box-shadow: .5px .5px 2px goldenrod;
+        background-color:rgb(7, 110, 112);
+        color: white
+      }
+
+      #send:active{
+        font-size: smaller;
+        box-shadow: .5px .5px 2px goldenrod;
+        background-color: white;
+        color: rgb(35, 64, 65);
       }
 
       #foot{
@@ -155,13 +207,10 @@
       }
 
       .text-uppercase{
-        color: rgb(189, 137, 7);
-        font-family: 'Joselin', sans-serif;
+        color: rgb(250, 185, 21);
+        font-family: 'Alata', sans-serif;
       }
 
-      #footlinks a{
-        margin-bottom: 2.2rem;
-      }
       
      
 
@@ -237,6 +286,73 @@
       </div>
     </div>
 
+    <!--Section: Contact v.2-->
+<section class="section">
+
+  <!--Section heading-->
+  <h2 class="section-heading h1 pt-4 mb-5" id="contact">CONTACT US</h2>
+
+  <div class="card">
+
+    <div class="card-body">
+
+      <!--Google map-->
+      <div id="map-container-google-12" class="z-depth-1-half map-container-7" style="height: 200px; margin-bottom: 30px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15858.021637715332!2d3.414398!3d6.457464000000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7029205e96964fea!2sIkoyi+Fairview+Apartments!5e0!3m2!1sen!2sng!4v1417081679732" frameborder="0"
+          style="border:0" allowfullscreen></iframe>
+      </div>
+
+      <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+          <form>
+
+            <div class="md-form">
+              <input type="text" id="contact-name" class="form-control">
+              <label for="contact-name" class="">Your name</label>
+            </div>
+
+            <div class="md-form">
+              <input type="text" id="contact-email" class="form-control">
+              <label for="contact-email" class="">Your email</label>
+            </div>
+
+            <div class="md-form">
+              <input type="text" id="contact-Subject" class="form-control">
+              <label for="contact-Subject" class="">Subject</label>
+            </div>
+
+          </form>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+          <div class="md-form primary-textarea">
+            <textarea id="contact-message" class="md-textarea form-control mb-0" rows="5" style="padding-bottom: 1.2rem;"></textarea>
+            <label for="contact-message">Your message</label>
+          </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-12">
+          <div class="text-center">
+            <a href="mailto:fairviewbookings@yahoo.com" class="btn btn-mdb-color btn-block" id="send">Send Message</a>
+          </div>
+        </div>
+        <!--Grid column-->
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!--Section: Contact v.2-->
+
     <footer class="text-center text-lg-start" id="foot">
       <!-- Grid container -->
       <div class="container p-4" >
@@ -259,23 +375,23 @@
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0" id="footlinks">
             <h5 class="text-uppercase">HOT LINKS</h5>
     
-            <ul class="list-unstyled mb-0">
+            <ul class="list-unstyled mb-4 mt-4">
               <li>
                 <a href="#!" class="text-light">About Us</a>
               </li>
-              <li>
+              <li class="mt-3">
                 <a href="#!" class="text-light">Our Apartments</a>
               </li>
-              <li>
+              <li class="mt-3">
                 <a href="#!" class="text-light">Book a Room</a>
               </li>
-              <li>
+              <li class="mt-3">
                 <a href="#!" class="text-light">Payment Details</a>
               </li>
-              <li>
+              <li class="mt-3">
                 <a href="#!" class="text-light">Amenities</a>
               </li>
-              <li>
+              <li class="mt-3">
                 <a href="#!" class="text-light">Contact Us</a>
               </li>
             </ul>
@@ -286,7 +402,7 @@
         <!--Grid row-->
       </div>
       <!-- Grid container -->
-    
+
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         © 2021 Copyright:
