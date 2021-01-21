@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="pingback" href="" />
+
+    <title>Our Apartments - FairView Apartments Ikoyi</title>
+    <link rel="canonical" href="#" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Our Apartments - FairView Apartments Ikoyi" />
+    <meta property="og:url" content="#" />
+    <meta property="og:site_name" content="FairView Apartments Ikoyi" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Our Apartments - FairView Apartments Ikoyi" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        #navg {
+            background-color: teal;
+        }
+
+        #logo1 {
+            max-width: 100%;
+        }
+
+        #logobrand {
+            padding-top: .7rem;
+            padding-bottom: .7rem;
+        }
+
+        .navbar-toggler:focus,
+        .navbar-toggler:hover {
+            border: 1px outset goldenrod;
+        }
+
+        .navbar .nav-item:not(:last-child) {
+            margin-right: 35px;
+        }
+
+        .nav-item:last-child {
+            margin-right: 100px;
+        }
+
+        .dropdown-toggle::after {
+            transition: transform 0.15s linear;
+        }
+
+        .show.dropdown .dropdown-toggle::after {
+            transform: translateY(3px);
+        }
+
+        .dropdown-menu {
+            margin-top: 0;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: goldenrod;
+            font-family: 'Alata', sans-serif;
+        }
+
+        .navbar-dark .navbar-nav .nav-link:focus,
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: gold;
+        }
+
+        .navbar-dark .navbar-nav .nav-link.disabled {
+            color: rgba(255, 255, 255, .25)
+        }
+
+        .navbar-dark .navbar-nav .active>.nav-link,
+        .navbar-dark .navbar-nav .nav-link.active,
+        .navbar-dark .navbar-nav .nav-link.show,
+        .navbar-dark .navbar-nav .show>.nav-link {
+            color: gold;
+        }
+
+
+        .breadcrumb-item {
+            font-size: 14px;
+            font-weight: 500;
+            padding: 0;
+            margin: 0 0 5px 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #aaaaaa;
+            font-family: "Josefin Sans", sans-serif;
+        }
+
+        .breadcrumb-item:hover {
+            color: teal !important;
+        }
+
+           
+        /*Portfolio*/
+
+        .portfolio .portfolio-item {
+        margin-bottom: 30px;
+        }
+
+        .portfolio #portfolio-flters {
+        padding: 0;
+        margin: 0 auto 20px auto;
+        list-style: none;
+        text-align: center;
+        }
+
+        .portfolio #portfolio-flters li {
+        cursor: pointer;
+        display: inline-block;
+        padding: 8px 15px 10px 15px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1;
+        text-transform: uppercase;
+        color: #444444;
+        margin-bottom: 5px;
+        transition: all 0.3s ease-in-out;
+        border-radius: 3px;
+        }
+
+        .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+        color: #fff;
+        background: #d9232d;
+        }
+
+        .portfolio #portfolio-flters li:last-child {
+        margin-right: 0;
+        }
+
+        .portfolio .portfolio-wrap {
+        transition: 0.3s;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        background: rgba(85, 98, 112, 0.6);
+        }
+
+        .portfolio .portfolio-wrap::before {
+        content: "";
+        background: rgba(85, 98, 112, 0.6);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transition: all ease-in-out 0.3s;
+        z-index: 2;
+        opacity: 0;
+        }
+
+        .portfolio .portfolio-wrap img {
+        transition: all ease-in-out 0.3s;
+        }
+
+        .portfolio .portfolio-wrap .portfolio-info {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 3;
+        transition: all ease-in-out 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 20px;
+        }
+
+        .portfolio .portfolio-wrap .portfolio-info h4 {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 600;
+        }
+
+        .portfolio .portfolio-wrap .portfolio-info p {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+        font-style: italic;
+        }
+
+        .portfolio .portfolio-wrap .portfolio-links {
+        text-align: center;
+        z-index: 4;
+        }
+
+        .portfolio .portfolio-wrap .portfolio-links a {
+        color: rgba(255, 255, 255, 0.6);
+        margin: 0 5px 0 0;
+        font-size: 28px;
+        display: inline-block;
+        transition: 0.3s;
+        }
+
+        .portfolio .portfolio-wrap .portfolio-links a:hover {
+        color: white;
+        }
+
+        .portfolio .portfolio-wrap:hover::before {
+        opacity: 1;
+        }
+
+        .portfolio .portfolio-wrap:hover img {
+        transform: scale(1.2);
+        }
+
+        .portfolio .portfolio-wrap:hover .portfolio-info {
+        opacity: 1;
+        }        
+    </style>
+        
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark navbar-fixed-top" id="navg">
+        <a class="navbar-brand" href="index.html" id="logobrand"><img src="Images\fairview_logoa.png" alt="logo"
+                id="logo1" /></a>
+        <button class="navbar-toggler d-lg-none" id="butt1" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" id="customlink1" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="customlink2" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" id="customlink3" href="apartments.html">Our Apartments <span
+                        class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown" id="customlink4">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="true">More</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">Book a Room</a>
+                        <a class="dropdown-item" href="#">Payment Details</a>
+                        <a class="dropdown-item" href="#">Amenities</a>
+                        <a class="dropdown-item" href="#">Contact Us</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-image color-grey-light mb-0"
+      style="background-image: url('Images/fairview_apartments.jpg'); height: 400px; background-position: center; background-repeat: no-repeat; background-size: cover;">
+      <div class="mask rgba-black-strong d-flex align-items-center h-100">
+        <div class="container text-center">
+            <div class="jumbotron m-0" style="background-color: rgba(229, 243, 239, 0.7);">
+                <h1 class="display-4" style="font-size: 250%; font-family: 'Philosopher', sans-serif; text-shadow: -1px 0 goldenrod, 0 1px gold, 1px 0 white, 0 -1px goldenrod;">OUR APARTMENTS</h1>
+                <p class="lead" style="font-family: 'Dosis', sans-serif; font-weight: 400; color: rgb(5, 56, 56);">Explore our variety of apartments carefully designed for your comfort, convenience and relaxation.</p>
+                <hr class="my-2">
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+                </p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <main id="main">
+        <nav class="breadcrumb">
+            <a class="breadcrumb-item" href="index.html"><i class="fa fa-home" aria-hidden="true">&nbsp;Home</i></a>
+            <a class="breadcrumb-item" href="#">Our Apartments</a>
+            <span class="breadcrumb-item active"></span>
+        </nav>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+      
+              <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center">
+                  <ul id="portfolio-flters">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-app">Single Rooms</li>
+                    <li data-filter=".filter-card">Mid Sized Budget Studios</li>
+                    <li data-filter=".filter-web">Larger Sized Budget Studios</li>
+                    <li data-filter=".filter-app">Budget Mini One Bedroom Flats</li>
+                    <li data-filter=".filter-card">Executive Budget One Bedroom Flat</li>
+                    <li data-filter=".filter-web">Budget Two Bedroom Flats</li>
+                    <li data-filter=".filter-web">Party/Small Meeting Room</li>
+                  </ul>
+                </div>
+              </div>
+      
+              <div class="row portfolio-container">
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                  <div class="portfolio-wrap">
+                    <img src="Images/singlerm1.jpg" class="img-fluid" alt="">
+                    <h4 style="font-size: 15px; font-family: 'Josefin Sans', 'sans-serif'; background-color: rgba(216, 178, 9, 0.4); border-radius: 5px; color: white; padding: 8px; text-align: center;">IKOYI FAIRVIEW – MINI ROOM 84 – GROUND FLOOR</h4>
+                    <div class="portfolio-info">
+                      <h4>IKOYI FAIRVIEW – MINI ROOM 84 – GROUND FLOOR</h4>
+                      <p>App</p>
+                      <div class="portfolio-links">
+                        <a href="rooms/miniroom84.html" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;&nbsp;View</a>
+                        <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4>Web 3</h4>
+                      <p>Web</p>
+                      <div class="portfolio-links">
+                        <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
+                        <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4>App 2</h4>
+                      <p>App</p>
+                      <div class="portfolio-links">
+                        <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
+                        <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4>Card 2</h4>
+                      <p>Card</p>
+                      <div class="portfolio-links">
+                        <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
+                        <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4>Web 2</h4>
+                      <p>Web</p>
+                      <div class="portfolio-links">
+                        <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
+                        <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4>App 3</h4>
+                      <p>App</p>
+                      <div class="portfolio-links">
+                        <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
+                        <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4>Card 1</h4>
+                      <p>Card</p>
+                      <div class="portfolio-links">
+                        <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
+                        <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4>Card 3</h4>
+                      <p>Card</p>
+                      <div class="portfolio-links">
+                        <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
+                        <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4>Web 3</h4>
+                      <p>Web</p>
+                      <div class="portfolio-links">
+                        <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
+                        <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+      
+            </div>
+        </section><!-- End Portfolio Section -->
+
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const $dropdown = $(".dropdown");
+      const $dropdownToggle = $(".dropdown-toggle");
+      const $dropdownMenu = $(".dropdown-menu");
+      const showClass = "show";
+      
+      $(window).on("load resize", function() {
+        if (this.matchMedia("(min-width: 768px)").matches) {
+          $dropdown.hover(
+            function() {
+              const $this = $(this);
+              $this.addClass(showClass);
+              $this.find($dropdownToggle).attr("aria-expanded", "true");
+              $this.find($dropdownMenu).addClass(showClass);
+            },
+            function() {
+              const $this = $(this);
+              $this.removeClass(showClass);
+              $this.find($dropdownToggle).attr("aria-expanded", "false");
+              $this.find($dropdownMenu).removeClass(showClass);
+            }
+          );
+        } else {
+          $dropdown.off("mouseenter mouseleave");
+        }
+      });
+    </script>
+    
+
+</body>
+
+</html>
