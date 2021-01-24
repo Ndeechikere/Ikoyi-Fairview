@@ -114,6 +114,9 @@
             color: teal !important;
         }
 
+        .img-fluid{
+          object-fit:cover;
+        }
            
         /*Portfolio*/
 
@@ -267,13 +270,26 @@
           color: #fff;
         }
 
-        a.is-active:hover, .notactive:hover{
-          transform: rotate(20deg);
+        a.is-active:hover{
+          transform: rotate(10deg);
           color: rgb(236, 200, 110);
+          box-shadow: 1px 1px 6px rgb(82, 81, 81);
         }
 
-        a.is-active:active, .notactive:active{
+        .notactive:hover{
+          transform: rotate(-10deg);
+          color: rgb(236, 200, 110);
+          box-shadow: -1px -1px 6px rgb(151, 150, 150);
+          border-radius: 50%;
+        }
+
+        a.is-active:active{
           transform:rotate(-20deg);
+          color: grey;
+        }
+
+        .notactive:active{
+          transform:rotate(20deg);
           color: grey;
         }
         

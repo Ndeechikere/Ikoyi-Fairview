@@ -114,6 +114,10 @@
             color: teal !important;
         }
 
+        .img-fluid{
+          object-fit:cover;
+        }
+
            
         /*Portfolio*/
 
@@ -267,13 +271,26 @@
           color: #fff;
         }
 
-        a.is-active:hover, .notactive:hover{
-          transform: rotate(20deg);
+        a.is-active:hover{
+          transform: rotate(10deg);
           color: rgb(236, 200, 110);
+          box-shadow: 1px 1px 6px rgb(82, 81, 81);
         }
 
-        a.is-active:active, .notactive:active{
+        .notactive:hover{
+          transform: rotate(-10deg);
+          color: rgb(236, 200, 110);
+          box-shadow: -1px -1px 6px rgb(151, 150, 150);
+          border-radius: 50%;
+        }
+
+        a.is-active:active{
           transform:rotate(-20deg);
+          color: grey;
+        }
+
+        .notactive:active{
+          transform:rotate(20deg);
           color: grey;
         }
         
@@ -403,7 +420,7 @@
                       <h4>BUDGET MINI ONE BEDROOM - FLAT 8</h4>
                       <p>Budget Mini One Bedroom Flats</p>
                       <div class="portfolio-links">
-                        <a href="rooms/flat8.html" data-gall="portfolioGallery" class="venobox" title="Budget Mini One Bedroom Flats Rooms 1"><i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;&nbsp;View</a>
+                        <a href="rooms/flat8.html" data-gall="portfolioGallery" class="venobox" title="Budget Mini One Bedroom Flats Rooms 2"><i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;&nbsp;View</a>
                       </div>
                     </div>
                   </div>
@@ -417,7 +434,7 @@
                         <h4>MID SIZED STUDIO 7</h4>
                         <p>Budget Mini One Bedroom Flats</p>
                         <div class="portfolio-links">
-                          <a href="rooms/stud7.html" data-gall="portfolioGallery" class="venobox" title="Budget Mini One Bedroom Flats Rooms 1"><i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;&nbsp;View</a>
+                          <a href="rooms/stud7.html" data-gall="portfolioGallery" class="venobox" title="Budget Mini One Bedroom Flats Rooms 3"><i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;&nbsp;View</a>
                         </div>
                       </div>
                     </div>
@@ -432,7 +449,7 @@
                         <h4>MINI ONE BEDROOM FLAT 9 PENT-FLOOR VIEW</h4>
                         <p>Budget Mini One Bedroom Flats</p>
                         <div class="portfolio-links">
-                          <a href="rooms/flat9.html" data-gall="portfolioGallery" class="venobox" title="Budget Mini One Bedroom Flats Rooms 1"><i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;&nbsp;View</a>
+                          <a href="rooms/flat9.html" data-gall="portfolioGallery" class="venobox" title="Budget Mini One Bedroom Flats Rooms 4"><i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;&nbsp;View</a>
                         </div>
                       </div>
                     </div>
@@ -446,39 +463,39 @@
                         <h4>MID SIZED STUDIO 24 – 3RD FLOOR VIEW</h4>
                         <p>Budget Mini One Bedroom Flats</p>
                         <div class="portfolio-links">
-                          <a href="rooms/stud24.html" data-gall="portfolioGallery" class="venobox" title="Budget Mini One Bedroom Flats Rooms 1"><i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;&nbsp;View</a>
+                          <a href="rooms/stud24.html" data-gall="portfolioGallery" class="venobox" title="Budget Mini One Bedroom Flats Rooms 5"><i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;&nbsp;View</a>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-exec">
                   <div class="portfolio-wrap">
-                    <img src="Images/Budrm3.jpg" class="img-fluid" alt="" style="height: 180px; width: 400px;">
-                    <h4 style="font-size: 15px; font-family: 'Josefin Sans', 'sans-serif'; background-color: rgba(216, 178, 9, 0.4); border-radius: 5px; color: white; padding: 8px; text-align: center;">MINI STUDIO 90</h4>
+                    <img src="Images/exec1a.jpg" class="img-fluid" alt="" style="height: 180px; width: 400px;">
+                    <h4 style="font-size: 15px; font-family: 'Josefin Sans', 'sans-serif'; background-color: rgba(216, 178, 9, 0.4); border-radius: 5px; color: white; padding: 8px; text-align: center;">EXECUTIVE ONE BEDROOM FLAT 91</h4>
                     <div class="portfolio-info">
-                      <h4>MINI STUDIO 90</h4>
-                      <p>Web</p>
+                      <h4>EXECUTIVE ONE BEDROOM FLAT 91</h4>
+                      <p>Executive Budget One Bedroom Flat</p>
                       <div class="portfolio-links">
-                        <a href="rooms/stud90.html" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;&nbsp;View</a>
+                        <a href="rooms/flat91.html" data-gall="portfolioGallery" class="venobox" title="Executive Budget One Bedroom Flat 1"><i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;&nbsp;View</a>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                  <div class="portfolio-wrap">
-                    <img src="Images/Budrm4.jpg" class="img-fluid" alt="" style="height: 200px; width: 400px;">
-                    <h4 style="font-size: 15px; font-family: 'Josefin Sans', 'sans-serif'; background-color: rgba(216, 178, 9, 0.4); border-radius: 5px; color: white; padding: 8px; text-align: center;">MINI STUDIO 86 – GROUND FLOOR</h4>
-                    <div class="portfolio-info">
-                      <h4>MINI STUDIO 86 – GROUND FLOOR</h4>
-                      <p>Web</p>
-                      <div class="portfolio-links">
-                        <a href="rooms/stud86.html" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;&nbsp;View</a>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-exec">
+                    <div class="portfolio-wrap">
+                      <img src="Images/exec2a.jpg" class="img-fluid" alt="" style="height: 180px; width: 400px;">
+                      <h4 style="font-size: 15px; font-family: 'Josefin Sans', 'sans-serif'; background-color: rgba(216, 178, 9, 0.4); border-radius: 5px; color: white; padding: 8px; text-align: center;">BUDGET EXECUTIVE ONE BEDROOM FLAT 11 WITH INTERESTING BALCONY</h4>
+                      <div class="portfolio-info">
+                        <h4>BUDGET EXECUTIVE ONE BEDROOM FLAT 11 WITH INTERESTING BALCONY</h4>
+                        <p>Executive Budget One Bedroom Flat</p>
+                        <div class="portfolio-links">
+                          <a href="rooms/flat11.html" data-gall="portfolioGallery" class="venobox" title="Executive Budget One Bedroom Flat 1"><i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;&nbsp;View</a>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                   <div class="portfolio-wrap">
