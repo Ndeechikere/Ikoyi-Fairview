@@ -533,3 +533,195 @@ color: white;
 .footer-links a:hover{
     color: orangered;
 }
+
+#navg{
+    background-color:teal;
+  }
+
+  #logo1{
+    max-width:100%;
+  }
+
+  #logobrand{
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+  }
+
+  .navbar-toggler:focus, .navbar-toggler:hover {
+    border: 1px outset goldenrod; 
+  }
+
+  .navbar .nav-item:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  .nav-item:last-child {
+    margin-right: 100px;
+  }
+  
+  .dropdown-toggle::after {
+    transition: transform 0.15s linear; 
+  }
+  
+  .show.dropdown .dropdown-toggle::after {
+    transform: translateY(3px);
+  }
+
+  .dropdown-menu {
+    margin-top: 0;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: goldenrod;
+    font-family: 'Alata', sans-serif;
+  }
+
+  .navbar-dark .navbar-nav .nav-link:focus,
+  .navbar-dark .navbar-nav .nav-link:hover {
+      color: gold;
+  }
+
+  .navbar-dark .navbar-nav .nav-link.disabled {
+      color: rgba(255, 255, 255, .25)
+  }
+
+  .navbar-dark .navbar-nav .active>.nav-link,
+  .navbar-dark .navbar-nav .nav-link.active,
+  .navbar-dark .navbar-nav .nav-link.show,
+  .navbar-dark .navbar-nav .show>.nav-link {
+      color: gold;
+  }
+
+  .jumbotron{
+    background-image: url(Images/fairview_building.jpg);
+    background-size: cover;
+    margin-bottom: 0;
+
+
+  }
+
+  .customback{
+    background-color: rgba(217, 221, 223, 0.75);
+    padding: 20px;
+  }
+
+  .customback>h1{
+    font-family: 'Alata', sans-serif;
+  }
+
+  .customback>p{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    color: rgb(2, 80, 80);
+  }
+
+  #more{
+    text-decoration: none;
+    color:rgb(94, 68, 4)
+  }
+
+  #more:hover{
+    text-decoration: underline;
+    color: rgb(2, 80, 80);
+  }
+
+  #more:active{
+    text-decoration: underline;
+    color: gold;
+  }
+
+
+  .btn-primary {
+    color: rgb(248, 181, 11);
+    background-color:  rgb(23, 133, 133);
+    border-color:rgb(248, 181, 11);
+    font-family: 'Alata', sans-serif;
+  }
+
+  .btn-primary:hover{
+    color: rgb(23, 133, 133);
+    background-color: rgb(248, 181, 11);
+    border-color: rgb(23, 133, 133);
+  }
+
+  .btn-primary:active{
+    color: rgb(23, 133, 133);
+    background-color: rgb(230, 210, 161);
+    border-color: rgb(23, 133, 133);
+  }
+
+  @media (min-width:576px) {
+  .jumbotron {
+    padding: 7rem 2rem 21rem 2rem;
+    }
+  }
+
+  .map-container-7{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+    
+  .map-container-7 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
+
+  #contact{
+    font-family:  'Dosis', sans-serif;
+    font-weight: 400;
+    color: rgb(2, 80, 80);
+    margin: 4rem auto -20rem 1.25rem;
+  }
+
+  #send{
+    border-color: darkgoldenrod;
+    border-radius: 5px;
+    background-color: teal;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    font-weight: bold;
+  }
+
+  #send:hover{
+    font-size: larger;
+    box-shadow: .5px .5px 2px goldenrod;
+    background-color:rgb(7, 110, 112);
+    color: white
+  }
+
+  #send:active{
+    font-size: smaller;
+    box-shadow: .5px .5px 2px goldenrod;
+    background-color: white;
+    color: rgb(35, 64, 65);
+  }
+
+  #foot{
+    background-color: teal;
+
+  }
+
+  .list-group-item{
+    background-color: transparent;
+    border: 0;
+    color: white;
+  }
+  .list-group{
+    text-align: left;
+  }
+  
+  @media (min-width:576px) {
+  .list-group-item {
+    padding-left: 7.25rem;
+    }
+  }
+
+  .text-uppercase{
+    color: rgb(250, 185, 21);
+    font-family: 'Alata', sans-serif;
+  }
