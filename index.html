@@ -23,218 +23,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&display=swap" rel="stylesheet">
-
-    <style>
-      #navg{
-        background-color:teal;
-      }
-
-      #logo1{
-        max-width:100%;
-      }
-
-      #logobrand{
-        padding-top: .7rem;
-        padding-bottom: .7rem;
-      }
-
-      .navbar-toggler:focus, .navbar-toggler:hover {
-        border: 1px outset goldenrod; 
-      }
-
-      .navbar .nav-item:not(:last-child) {
-        margin-right: 35px;
-      }
-
-      .nav-item:last-child {
-        margin-right: 100px;
-      }
-      
-      .dropdown-toggle::after {
-        transition: transform 0.15s linear; 
-      }
-      
-      .show.dropdown .dropdown-toggle::after {
-        transform: translateY(3px);
-      }
-
-      .dropdown-menu {
-        margin-top: 0;
-      }
-
-      .navbar-dark .navbar-nav .nav-link {
-        color: goldenrod;
-        font-family: 'Alata', sans-serif;
-      }
-
-      .navbar-dark .navbar-nav .nav-link:focus,
-      .navbar-dark .navbar-nav .nav-link:hover {
-          color: gold;
-      }
-
-      .navbar-dark .navbar-nav .nav-link.disabled {
-          color: rgba(255, 255, 255, .25)
-      }
-
-      .navbar-dark .navbar-nav .active>.nav-link,
-      .navbar-dark .navbar-nav .nav-link.active,
-      .navbar-dark .navbar-nav .nav-link.show,
-      .navbar-dark .navbar-nav .show>.nav-link {
-          color: gold;
-      }
-
-      .jumbotron{
-        background-image: url(Images/fairview_building.jpg);
-        background-size: cover;
-        margin-bottom: 0;
-
-
-      }
-
-      .customback{
-        background-color: rgba(217, 221, 223, 0.75);
-        padding: 20px;
-      }
-
-      .customback>h1{
-        font-family: 'Alata', sans-serif;
-      }
-
-      .customback>p{
-        font-family: 'Dosis', sans-serif;
-        font-weight: 400;
-        color: rgb(2, 80, 80);
-      }
-
-      #more{
-        text-decoration: none;
-        color:rgb(94, 68, 4)
-      }
-
-      #more:hover{
-        text-decoration: underline;
-        color: rgb(2, 80, 80);
-      }
-
-      #more:active{
-        text-decoration: underline;
-        color: gold;
-      }
-
-
-      .btn-primary {
-        color: rgb(248, 181, 11);
-        background-color:  rgb(23, 133, 133);
-        border-color:rgb(248, 181, 11);
-        font-family: 'Alata', sans-serif;
-      }
-
-      .btn-primary:hover{
-        color: rgb(23, 133, 133);
-        background-color: rgb(248, 181, 11);
-        border-color: rgb(23, 133, 133);
-      }
-
-      .btn-primary:active{
-        color: rgb(23, 133, 133);
-        background-color: rgb(230, 210, 161);
-        border-color: rgb(23, 133, 133);
-      }
-
-      @media (min-width:576px) {
-      .jumbotron {
-        padding: 7rem 2rem 21rem 2rem;
-        }
-      }
-
-      .map-container-7{
-        overflow:hidden;
-        padding-bottom:56.25%;
-        position:relative;
-        height:0;
-        }
-        
-      .map-container-7 iframe{
-        left:0;
-        top:0;
-        height:100%;
-        width:100%;
-        position:absolute;
-        }
-
-      #contact{
-        font-family:  'Dosis', sans-serif;
-        font-weight: 400;
-        color: rgb(2, 80, 80);
-        margin: 4rem auto -20rem 1.25rem;
-      }
-
-      #send{
-        border-color: darkgoldenrod;
-        border-radius: 5px;
-        background-color: teal;
-        color: white;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', sans-serif;
-        font-weight: bold;
-      }
-
-      #send:hover{
-        font-size: larger;
-        box-shadow: .5px .5px 2px goldenrod;
-        background-color:rgb(7, 110, 112);
-        color: white
-      }
-
-      #send:active{
-        font-size: smaller;
-        box-shadow: .5px .5px 2px goldenrod;
-        background-color: white;
-        color: rgb(35, 64, 65);
-      }
-
-      #foot{
-        background-color: teal;
-
-      }
-
-      .list-group-item{
-        background-color: transparent;
-        border: 0;
-        color: white;
-      }
-      .list-group{
-        text-align: left;
-      }
-      
-      @media (min-width:576px) {
-      .list-group-item {
-        padding-left: 7.25rem;
-        }
-      }
-
-      .text-uppercase{
-        color: rgb(250, 185, 21);
-        font-family: 'Alata', sans-serif;
-      }
-
-      
-     
-
-
-
-      
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles/mystyle.css" type="text/css">
   
-    </style>
   </head>
   <body>
     <nav
       class="navbar navbar-expand-sm navbar-dark" id="navg"
     >
-      <a class="navbar-brand" href="index.html" id="logobrand"
-        ><img src="Images\fairview_logoa.png" alt="logo" id="logo1"
-      /></a>
+    <a class="navbar-brand" href="index.html" id="logobrand"
+    ><img src="Images\fairviewlogoa.png" alt="logo" id="logo1"/></a>
       <button
-        class="navbar-toggler d-lg-none"
+        class="navbar-toggler custom-toggler d-lg-none"
         id="butt1"
         type="button"
         data-toggle="collapse"
@@ -244,19 +45,22 @@
         aria-label="Toggle navigation"
       ><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" id="customlink1" href="index.html"
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 snip1250">
+          <li class="nav-item active current">
+            <a class="nav-link" id="customlink1" href="index.html" data-hover="Home"
               >Home <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="customlink2" href="about.html">About Us</a>
+            <a class="nav-link" id="customlink2" href="about.html" data-hover="About Us">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="customlink3" href="apartments.html">Our Apartments</a>
+            <a class="nav-link" id="customlink3" href="apartments.html" data-hover="Our Apartments">Our Apartments</a>
           </li>
-          <li class="nav-item dropdown" id="customlink4">
+          <li class="nav-item">
+            <a class="nav-link" id="customlink4" href="Bookaroom.html" data-hover="Book a Room">Book a Room</a>
+          </li>
+          <li class="nav-item dropdown" id="customlink5">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -264,10 +68,10 @@
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="true"
+              data-hover="More"
               >More</a
             >
             <div class="dropdown-menu" aria-labelledby="dropdownId">
-              <a class="dropdown-item" href="Bookaroom.html">Book a Room</a>
                 <a class="dropdown-item" href="payment.html">Payment Details</a>
                 <a class="dropdown-item" href="amenities.html">Amenities</a>
                 <a class="dropdown-item" href="contact.html">Contact Us</a>
@@ -277,16 +81,21 @@
       </div>
     </nav>
 
-    <div class="jumbotron">
+    <nav class="breadcrumb" style="margin-bottom: -1rem;">
+      <a class="breadcrumb-item" href="index.html"><i class="fa fa-home" aria-hidden="true">&nbsp;Home</i></a>
+      <span class="breadcrumb-item active"></span>
+    </nav>
+
+    <div class="jumbotron custjumb" style="background-image: url(Images/fairview_building.jpg); background-size: cover;margin-bottom: 0;">
       <div class="customback">
-        <h1 class="display-4">Welcome to Ikoyi Fairview Apartments</h1>
+        <h1 class="display-4" style="text-shadow: -1px 0 goldenrod, 0 1px gold, 1px 0 white, 0 -1px goldenrod;">Welcome to Ikoyi Fairview Apartments</h1>
         <p class="lead">At fairview, your comfort and convenience are always our topmost priority. During your stay at Ikoyi Fairview Apartments, you'll be within walking distance of Lagos Motor Boat Club. We offer amazing features like free WiFi in public areas, free self-parking, plus breakfast (surcharge), free WiFi and a flat-screen TV in each room and many more facilities designed for your comfort and relaxation.</p>
         <hr class="my-2">
         <p><a href="about.html" id="more">More info</a></p>
-        <p class="lead">
+        <p class="lead" id="infobtn">
           <a class="btn btn-primary btn-lg" href="apartments.html" role="button">View our Apartments</a>
         </p>
-        <p class="lead">
+        <p class="lead" id="infobtn2">
           <a class="btn btn-primary btn-lg" href="Bookaroom.html" role="button">Book a Room Now</a>
         </p>
       </div>
@@ -359,66 +168,82 @@
 </section>
 <!--Section: Contact v.2-->
 
-    <footer class="text-center text-lg-start" id="foot">
-      <!-- Grid container -->
-      <div class="container p-4" >
-        <!--Grid row-->
-        <div class="row">
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-            <span class="logo2"><img src="Images/fairview_logoa.png"></span>
+<footer id="footer" class="text-center text-lg-start">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
 
-            <ul class="list-group">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-info">
+            <span class="logo2"><img src="Images/fairviewlogoa.png"></span>
+            <ul>
+              <li class="list-group-item"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;89, Lafiaji Way, Dolphin Estate, Ikoyi, Lagos, Nigeria.</li>
               <li class="list-group-item"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;+234-803-304-0633 – Lagos Nigeria</li>
               <li class="list-group-item"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;+234-806-644-5251 – Lagos Nigeria</li>
               <li class="list-group-item"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;+1-281-725-7318 – Houston Texas</li>
               <li class="list-group-item"><i class="fa fa-envelope-open" aria-hidden="true"></i> &nbsp;&nbsp; fairviewbookings@yahoo.com</li>
             </ul>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
           </div>
-          <!--Grid column-->
-    
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0" id="footlinks">
-            <h5 class="text-uppercase">HOT LINKS</h5>
-    
-            <ul class="list-unstyled mb-4 mt-4">
-              <li>
-                <a href="index.html" class="text-light">Home</a>
-              </li>
-              <li class="mt-3">
-                <a href="about.html" class="text-light">About Us</a>
-              </li>
-              <li class="mt-3">
-                <a href="apartments.html" class="text-light">Our Apartments</a>
-              </li>
-              <li class="mt-3">
-                <a href="Bookaroom.html" class="text-light">Book a Room</a>
-              </li>
-              <li class="mt-3">
-                <a href="payment.html" class="text-light">Payment Details</a>
-              </li>
-              <li class="mt-3">
-                <a href="amenities.html" class="text-light">Amenities</a>
-              </li>
-              <li class="mt-3">
-                <a href="contact.html" class="text-light">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-  
         </div>
-        <!--Grid row-->
-      </div>
-      <!-- Grid container -->
 
-      <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        © 2021 Copyright:
-        <a class="text-dark" href="#">Ikoyi Fairview Apartments</a>
+        <div class="col-lg-4 col-md-6 footer-links">
+          <h4 style="color: rgb(255, 174, 0);">HOT LINKS</h4>
+          <ul class="list-unstyled mb-4 mt-4">
+            <li>
+                <i class="fa fa-home" aria-hidden="true"></i>&nbsp;<a href="index.html" class="text-light">Home</a>
+            </li>
+            <li class="mt-3">
+              <i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;<a href="about.html" class="text-light">About Us</a>
+            </li>
+            <li class="mt-3">
+              <i class="fa fa-building-o" aria-hidden="true"></i>&nbsp;<a href="apartments.html" class="text-light">Our Apartments</a>
+            </li>
+            <li class="mt-3">
+              <i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;<a href="Bookaroom.html" class="text-light">Book a Room</a>
+            </li>
+            <li class="mt-3">
+             <i class="fa fa-money" aria-hidden="true"></i> &nbsp;<a href="payment.html" class="text-light">Payment Details</a>
+            </li>
+            <li class="mt-3">
+              <i class="fa fa-television" aria-hidden="true"></i>&nbsp;<a href="amenities.html" class="text-light">Amenities</a>
+            </li>
+            <li class="mt-3">
+              <i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;<a href="contact.html" class="text-light">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 footer-newsletter">
+          <h4 style="color: rgb(255, 174, 0);">Send us a message</h4>
+          <p>Have a question? Send us a mail.</p>
+          <form action="mailto:fairviewbookings@yahoo.com" method="post"></form>
+            <textarea id="contact-message" class="md-textarea form-control mb-0" rows="5"></textarea>
+            <div class="text-center">
+              <div class="text-center"><button class="snip0047 red"><span>Send Message</span><i class="fa fa-envelope" aria-hidden="true"></i></i></button>
+            </div>
+          </form>
+
+        </div>
+
       </div>
-      <!-- Copyright -->
-    </footer>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="copyright">
+      &copy; 2021 Copyright <strong><span>Ikoyi Fairview Apartments</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      Designed by <a href="#"></a>
+    </div>
+  </div>
+</footer><!-- End Footer -->
     
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
