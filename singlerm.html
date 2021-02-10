@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="pingback" href="" />
+
+    <title>Our Apartments - FairView Apartments Ikoyi</title>
+    <link rel="canonical" href="#" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Our Apartments - FairView Apartments Ikoyi" />
+    <meta property="og:url" content="#" />
+    <meta property="og:site_name" content="FairView Apartments Ikoyi" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Our Apartments - FairView Apartments Ikoyi" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        #navg {
+            background-color: teal;
+        }
+
+        #logo1 {
+            max-width: 100%;
+        }
+
+        #logobrand {
+            padding-top: .7rem;
+            padding-bottom: .7rem;
+        }
+
+        .navbar-toggler:focus,
+        .navbar-toggler:hover {
+            border: 1px outset goldenrod;
+        }
+
+        .navbar .nav-item:not(:last-child) {
+            margin-right: 35px;
+        }
+
+        .nav-item:last-child {
+            margin-right: 100px;
+        }
+
+        .dropdown-toggle::after {
+            transition: transform 0.15s linear;
+        }
+
+        .show.dropdown .dropdown-toggle::after {
+            transform: translateY(3px);
+        }
+
+        .dropdown-menu {
+            margin-top: 0;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: goldenrod;
+            font-family: 'Alata', sans-serif;
+        }
+
+        .navbar-dark .navbar-nav .nav-link:focus,
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: gold;
+        }
+
+        .navbar-dark .navbar-nav .nav-link.disabled {
+            color: rgba(255, 255, 255, .25)
+        }
+
+        .navbar-dark .navbar-nav .active>.nav-link,
+        .navbar-dark .navbar-nav .nav-link.active,
+        .navbar-dark .navbar-nav .nav-link.show,
+        .navbar-dark .navbar-nav .show>.nav-link {
+            color: gold;
+        }
+
+        #viewbtn:hover{
+          color: goldenrod;
+        }
+
+        #viewbtn:active{
+          color: red;
+        }
+
+        .breadcrumb-item {
+            font-size: 14px;
+            font-weight: 500;
+            padding: 0;
+            margin: 0 0 5px 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #aaaaaa;
+            font-family: "Josefin Sans", sans-serif;
+        }
+
+        .breadcrumb-item:hover {
+            color: teal !important;
+        }
+
+        .img-fluid{
+          object-fit:cover;
+        }
+           
+        /*Portfolio*/
+
+        .portfolio .portfolio-item {
+        margin-bottom: 30px;
+        }
+
+        .portfolio #portfolio-flters {
+        padding: 0;
+        margin: 0 auto 20px auto;
+        list-style: none;
+        text-align: center;
+        }
+
+        .portfolio #portfolio-flters li {
+        cursor: pointer;
+        display: inline-block;
+        padding: 8px 15px 10px 15px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1;
+        text-transform: uppercase;
+        color: #444444;
+        margin-bottom: 5px;
+        transition: all 0.3s ease-in-out;
+        border-radius: 3px;
+        }
+
+        .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+        color: #fff;
+        background: teal;
+        }
+
+        .portfolio #portfolio-flters li:last-child {
+        margin-right: 0;
+        }
+
+        .portfolio .portfolio-wrap {
+        transition: 0.3s;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        background: rgba(85, 98, 112, 0.6);
+        }
+
+        .portfolio .portfolio-wrap::before {
+        content: "";
+        background: rgba(85, 98, 112, 0.6);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transition: all ease-in-out 0.3s;
+        z-index: 2;
+        opacity: 0;
+        }
+
+        .portfolio .portfolio-wrap img {
+        transition: all ease-in-out 0.3s;
+        }
+
+        .portfolio .portfolio-wrap .portfolio-info {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 3;
+        transition: all ease-in-out 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 20px;
+        }
+
+        .portfolio .portfolio-wrap .portfolio-info h4 {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 600;
+        }
+
+        .portfolio .portfolio-wrap .portfolio-info p {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+        font-style: italic;
+        }
+
+        .portfolio .portfolio-wrap .portfolio-links {
+        text-align: center;
+        z-index: 4;
+        }
+
+        .portfolio .portfolio-wrap .portfolio-links a {
+        color: rgba(255, 255, 255, 0.6);
+        margin: 0 5px 0 0;
+        font-size: 28px;
+        display: inline-block;
+        transition: 0.3s;
+        }
+
+        .portfolio .portfolio-wrap .portfolio-links a:hover {
+        color: white;
+        }
+
+        .portfolio .portfolio-wrap:hover::before {
+        opacity: 1;
+        }
+
+        .portfolio .portfolio-wrap:hover img {
+        transform: scale(1.2);
+        }
+
+        .portfolio .portfolio-wrap:hover .portfolio-info {
+        opacity: 1;
+        }
+
+        .pagination{
+          padding: 30px 0;
+        }
+
+        .pagination ul{
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+        }
+
+        .pagination a{
+          display: inline-block;
+          padding: 10px 18px;
+          color: #222;
+        }
+
+        .p1 a{
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          padding: 0;
+          text-align: center;
+          text-decoration: none;
+        }
+
+        .p1 a.is-active{
+          background-color: teal;
+          border-radius: 100%;
+          color: #fff;
+        }
+
+        a.is-active:hover{
+          transform: rotate(10deg);
+          color: rgb(236, 200, 110);
+          box-shadow: 1px 1px 6px rgb(82, 81, 81);
+        }
+
+        .notactive:hover{
+          transform: rotate(-10deg);
+          color: rgb(236, 200, 110);
+          box-shadow: -1px -1px 6px rgb(151, 150, 150);
+          border-radius: 50%;
+        }
+
+        a.is-active:active{
+          transform:rotate(-20deg);
+          color: grey;
+        }
+
+        .notactive:active{
+          transform:rotate(20deg);
+          color: grey;
+        }
+        
+        #foot{
+        background-color: teal;
+
+        }
+
+        .list-group-item{
+            background-color: transparent;
+            border: 0;
+            color: white;
+        }
+        .list-group{
+            text-align: left;
+        }
+        
+        @media (min-width:576px) {
+        .list-group-item {
+            padding-left: 7.25rem;
+            }
+        }
+
+        .text-uppercase{
+            color: rgb(250, 185, 21);
+            font-family: 'Alata', sans-serif;
+        }
+
+        .text-light{
+            text-shadow: -1px 0 rgb(34, 0, 0), 0 1px rgb(122, 89, 4), 1px 0 rgba(4, 88, 88, 0.301), 0 -1px white;
+        }
+
+        .mylink{
+          text-decoration: none;
+          color: black;
+        }
+
+        .mylink:hover{
+          color:white;
+          text-decoration: none;
+        }
+
+        .mylink:active{
+          text-decoration: none;
+          color: goldenrod;
+
+        }
+    </style>
+        
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark navbar-fixed-top" id="navg">
+        <a class="navbar-brand" href="index.html" id="logobrand"><img src="Images\fairview_logoa.png" alt="logo"
+                id="logo1" /></a>
+        <button class="navbar-toggler d-lg-none" id="butt1" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" id="customlink1" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="customlink2" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" id="customlink3" href="apartments.html">Our Apartments <span
+                        class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown" id="customlink4">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="true">More</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="Bookaroom.html">Book a Room</a>
+                        <a class="dropdown-item" href="payment.html">Payment Details</a>
+                        <a class="dropdown-item" href="amenities.html">Amenities</a>
+                        <a class="dropdown-item" href="contact.html">Contact Us</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-image color-grey-light mb-0"
+      style="background-image: url('Images/fairview_apartments.jpg'); height: 450px; background-position: center; background-repeat: no-repeat; background-size: cover;">
+      <div class="mask rgba-black-strong d-flex align-items-center h-100">
+        <div class="container text-center">
+            <div class="jumbotron m-0" style="background-color: rgba(229, 243, 239, 0.7);">
+                <h1 class="display-4" style="font-size: 250%; font-family: 'Philosopher', sans-serif; text-shadow: -1px 0 goldenrod, 0 1px gold, 1px 0 white, 0 -1px goldenrod;">OUR APARTMENTS</h1>
+                <p class="lead" style="font-family: 'Dosis', sans-serif; font-weight: 400; color: rgb(5, 56, 56);">Explore our variety of apartments carefully designed for your comfort, convenience and relaxation.</p>
+                <hr class="my-2">
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg" id="viewbtn" href="#view" style="background-color: teal; border: 1px dotted goldenrod;" role="button">VIEW APARTMENTS</a>
+                </p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <main id="main">
+        <nav class="breadcrumb">
+            <a class="breadcrumb-item" href="index.html"><i class="fa fa-home" aria-hidden="true">&nbsp;Home</i></a>
+            <a class="breadcrumb-item" href="apartments.html">Our Apartments</a>
+            <a class="breadcrumb-item" href="singlerm.html">Single Rooms</a>
+            <span class="breadcrumb-item active"></span>
+        </nav>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+      
+              <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center">
+                  <ul id="portfolio-flters">
+                    <li data-filter="*"><a href="apartments.html" class="mylink">All</a></li>
+                    <li data-filter=".filter-sing" class="filter-active"><a href="singlerm.html" class="mylink" style="color: white;">Single Rooms</a></li><a name="view"></a>
+                    <li data-filter=".filter-mid"><a href="midsized.html" class="mylink" >Mid Sized Budget Studios</a></li>
+                    <li data-filter=".filter-larg"><a href="largsized.html" class="mylink">Larger Sized Budget Studios</a></li>
+                    <li data-filter=".filter-mini"><a href="minione.html" class="mylink">Budget Mini One Bedroom Flats</a></li>
+                    <li data-filter=".filter-exec"><a href="exec.html" class="mylink">Executive Budget One Bedroom Flat</a></li>
+                    <li data-filter=".filter-two"><a href="twobed.html" class="mylink">Budget Two Bedroom Flats</a></li>
+                    <li data-filter=".filter-petite"><a href="party.html" class="mylink">Party/Small Meeting Room</a></li>
+                  </ul>
+                </div>
+              </div>
+      
+              <div class="row portfolio-container">
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-sing">
+                  <div class="portfolio-wrap">
+                    <img src="Images/singlerm1.jpg" class="img-fluid" alt="" style="height: 200px; width: 400px;">
+                    <h4 style="font-size: 15px; font-family: 'Josefin Sans', 'sans-serif'; background-color: rgba(216, 178, 9, 0.4); border-radius: 5px; color: white; padding: 8px; text-align: center;">MINI ROOM 84 – GROUND FLOOR</h4>
+                    <div class="portfolio-info">
+                      <h4>MINI ROOM 84 – GROUND FLOOR</h4>
+                      <p>Single Rooms</p>
+                      <div class="portfolio-links">
+                        <a href="rooms/miniroom84.html" data-gall="portfolioGallery" class="venobox" title="Single Rooms 1"><i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;&nbsp;View</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-sing">
+                  <div class="portfolio-wrap">
+                    <img src="Images/singlerm2.jpg" class="img-fluid" alt="" style="height: 180px; width: 400px;">
+                    <h4 style="font-size: 15px; font-family: 'Josefin Sans', 'sans-serif'; background-color: rgba(216, 178, 9, 0.4); border-radius: 5px; color: white; padding: 8px; text-align: center;">MINIATURE ROOM 83 (2.5 by 6ft Bed - GROUND FLOOR</h4>
+                    <div class="portfolio-info">
+                      <h4>MINIATURE ROOM 83 (2.5 by 6ft Bed - GROUND FLOOR</h4>
+                      <p>Single Rooms</p>
+                      <div class="portfolio-links">
+                        <a href="rooms/miniroom83.html" data-gall="portfolioGallery" class="venobox" title="Single Rooms 2"><i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;&nbsp;View</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-sing">
+                  <div class="portfolio-wrap">
+                    <img src="Images/singlerm3.jpg" class="img-fluid" alt="" style="height: 200px; width: 400px;">
+                    <h4 style="font-size: 15px; font-family: 'Josefin Sans', 'sans-serif'; background-color: rgba(216, 178, 9, 0.4); border-radius: 5px; color: white; padding: 8px; text-align: center;">PETITE ROOM 12 - 3RD FLOOR VIEW</h4>
+                    <div class="portfolio-info">
+                      <h4>PETITE ROOM 12 - 3RD FLOOR VIEW</h4>
+                      <p>Single Rooms</p>
+                      <div class="portfolio-links">
+                        <a href="rooms/petiterm12.html" data-gall="portfolioGallery" class="venobox" title="Single Rooms 3"><i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;&nbsp;View</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        </section><!-- End Portfolio Section -->
+
+    </main>
+
+    <footer class="text-center text-lg-start" id="foot">
+      <!-- Grid container -->
+      <div class="container p-4" >
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <span class="logo2"><img src="Images/fairview_logoa.png" style="filter: saturate(200%);"></span>
+
+            <ul class="list-group">
+              <li class="list-group-item text-light"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;+234-803-304-0633 – Lagos Nigeria</li>
+              <li class="list-group-item text-light"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;+234-806-644-5251 – Lagos Nigeria</li>
+              <li class="list-group-item text-light"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;+1-281-725-7318 – Houston Texas</li>
+              <li class="list-group-item text-light"><i class="fa fa-envelope-open" aria-hidden="true"></i> &nbsp;&nbsp; fairviewbookings@yahoo.com</li>
+            </ul>
+          </div>
+          <!--Grid column-->
+    
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0" id="footlinks">
+            <h5 class="text-uppercase">HOT LINKS</h5>
+    
+            <ul class="list-unstyled mb-4 mt-4">
+              <li>
+                  <a href="index.html" class="text-light"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+              </li>
+              <li class="mt-3">
+                <a href="about.html" class="text-light"><i class="fa fa-info-circle" aria-hidden="true"></i> About Us</a>
+              </li>
+              <li class="mt-3">
+                <a href="apartments.html" class="text-light"><i class="fa fa-building" aria-hidden="true"></i> Our Apartments</a>
+              </li>
+              <li class="mt-3">
+                <a href="Bookaroom.html" class="text-light"><i class="fa fa-calendar" aria-hidden="true"></i> Book a Room</a>
+              </li>
+              <li class="mt-3">
+                <a href="payment.html" class="text-light"><i class="fa fa-money" aria-hidden="true"></i> Payment Details</a>
+              </li>
+              <li class="mt-3">
+                <a href="amenities.html" class="text-light"><i class="fa fa-user" aria-hidden="true"></i> Amenities</a>
+              </li>
+              <li class="mt-3">
+                <a href="contact.html" class="text-light"><i class="fa fa-address-book-o" aria-hidden="true"></i> Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2021 Copyright:
+        <a class="text-dark" href="#">Ikoyi Fairview Apartments</a>
+      </div>
+      <!-- Copyright -->
+ `  </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const $dropdown = $(".dropdown");
+      const $dropdownToggle = $(".dropdown-toggle");
+      const $dropdownMenu = $(".dropdown-menu");
+      const showClass = "show";
+      
+      $(window).on("load resize", function() {
+        if (this.matchMedia("(min-width: 768px)").matches) {
+          $dropdown.hover(
+            function() {
+              const $this = $(this);
+              $this.addClass(showClass);
+              $this.find($dropdownToggle).attr("aria-expanded", "true");
+              $this.find($dropdownMenu).addClass(showClass);
+            },
+            function() {
+              const $this = $(this);
+              $this.removeClass(showClass);
+              $this.find($dropdownToggle).attr("aria-expanded", "false");
+              $this.find($dropdownMenu).removeClass(showClass);
+            }
+          );
+        } else {
+          $dropdown.off("mouseenter mouseleave");
+        }
+      });
+    </script>
+    
+
+</body>
+
+</html>
