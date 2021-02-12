@@ -2,6 +2,11 @@
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
 
+
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background: white;
 }
@@ -22,7 +27,7 @@ body {
 
 .navbar-toggler:focus,
 .navbar-toggler:hover {
-    border: 1px outset goldenrod;
+    border: 1px outset orangered;
 }
 
 .navbar .nav-item:not(:last-child) {
@@ -53,20 +58,42 @@ body {
     color: grey;
 }
 
-.navbar-dark .navbar-nav .nav-link:focus,
+@media (min-width: 577px){
+    .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: rgb(255, 196, 0);
+        border-bottom: 5px solid rgb(255, 148, 26);
+        color: orange;
+    }
+    .navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link {
+        border-bottom: 4px solid rgb(255, 148, 26);
+        color: grey;
+    }
+
+}
+
+@media (max-width: 576px){
+    .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+        color: orangered;
+        border-left: 4px groove orange;
+        box-shadow: 0px 2px 5px rgba(167, 158, 158, 0.3);
+
+        
+    }
+
+    .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+        color: orangered;
+        border-left: 4px groove orange;
+        box-shadow: 0px 2px 5px rgba(167, 158, 158, 0.3);
+
+
 }
 
 .navbar-dark .navbar-nav .nav-link.disabled {
     color: rgba(255, 255, 255, .25)
 }
-
-.navbar-dark .navbar-nav .active>.nav-link,
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link.show,
-.navbar-dark .navbar-nav .show>.nav-link {
-    color: rgb(255, 196, 0);
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -82,55 +109,6 @@ body {
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
-
-@media (min-width: 576px){
-    .snip1250 li {
-    display: inline-block;
-    list-style: outside none none;
-    margin: 0 2.2em;
-    overflow: hidden;
-    }
-    .snip1250 a {
-    padding: 0 0.2em 0 0.5em;
-    color: grey;
-    position: relative;
-    display: inline-block;
-    letter-spacing: 1px;
-    margin: 0;
-    text-decoration: none;
-    }
-
-    .snip1250 a:before,
-    .snip1250 a:after {
-    position: absolute;
-    -webkit-transition: all 0.35s ease;
-    transition: all 0.35s ease;
-    }
-    .snip1250 a:before {
-    left: 100%;
-    display: block;
-    width: 3px;
-    height: 100%;
-    content: "";
-    background-color: #f39c12;
-    }
-    .snip1250 a:after {
-    padding: 0 0.2em 0 0.5em;
-    position: absolute;
-    left: 100%;
-    top: 0;
-    content: attr(data-hover);
-    color: grey;
-    white-space: nowrap;
-    }
-    .snip1250 li:hover a,
-    .snip1250 .current a {
-    transform: translateX(-100%);
-    }
-
-}
-
-
 
 
 .breadcrumb {
@@ -159,17 +137,188 @@ body {
     color: rgb(201, 109, 4) !important;
 }
 
-.cust1 {
-    background-image: url(Images/fairview_building.jpg);
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(74, 85, 98, 0.8);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #hero .carousel, #hero .carousel-inner, #hero .carousel-item, #hero .carousel-item::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+  
+  #hero .carousel-item {
     background-size: cover;
-    margin-bottom: 0;
-    box-shadow: 5px 5px 15px 5px rgba(238, 215, 156, 0.2), -5px -1px 15px 5px rgba(235, 215, 165, 0.1);
-}
-
-.cust1 section {
-    background-color: rgba(217, 221, 223, 0.8);
-    padding: 20px;
-}
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  #hero .carousel-item::before {
+    content: '';
+    background-color: rgba(74, 85, 98, 0.6);
+  }
+  
+  #hero .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 70px;
+    left: 50px;
+    right: 50px;
+  }
+  
+  #hero .container {
+    text-align: center;
+  }
+  
+  #hero h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 68px;
+    font-weight: 700;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: -1px 0 goldenrod, 0 1px gold, 1px 0 white, 0 -1px goldenrod;
+  }
+  
+  #hero p {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.6s;
+    margin: 0 auto 30px auto;
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+  }
+  
+  #hero .carousel-inner .carousel-item {
+    transition-property: opacity;
+    background-position: center top;
+  }
+  
+  #hero .carousel-inner .carousel-item,
+  #hero .carousel-inner .active.carousel-item-left,
+  #hero .carousel-inner .active.carousel-item-right {
+    opacity: 0;
+  }
+  
+  #hero .carousel-inner .active,
+  #hero .carousel-inner .carousel-item-next.carousel-item-left,
+  #hero .carousel-inner .carousel-item-prev.carousel-item-right {
+    opacity: 1;
+    transition: 0.5s;
+  }
+  
+  #hero .carousel-inner .carousel-item-next,
+  #hero .carousel-inner .carousel-item-prev,
+  #hero .carousel-inner .active.carousel-item-left,
+  #hero .carousel-inner .active.carousel-item-right {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  #hero .carousel-control-prev, #hero .carousel-control-next {
+    width: 10%;
+    top: 112px;
+  }
+  
+  @media (max-width: 992px) {
+    #hero .carousel-control-prev, #hero .carousel-control-next {
+      top: 66px;
+    }
+  }
+  
+  #hero .carousel-control-next-icon, #hero .carousel-control-prev-icon {
+    background: none;
+    font-size: 36px;
+    line-height: 1;
+    width: auto;
+    height: auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    padding: 10px;
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  #hero .carousel-control-next-icon:hover, #hero .carousel-control-prev-icon:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  #hero .carousel-indicators li {
+    cursor: pointer;
+    background: #fff;
+    overflow: hidden;
+    border: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    opacity: .6;
+    transition: 0.3s;
+  }
+  
+  #hero .carousel-indicators li.active {
+    opacity: 1;
+    background: orangered;
+  }
+  
+  #hero .btn-get-started {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 4px;
+    transition: 0.5s;
+    line-height: 1;
+    color: #fff;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    background: orangered;
+  }
+  
+  #hero .btn-get-started:hover {
+    background: orangered;
+  }
+  
+  @media (max-width: 992px) {
+    #hero {
+      height: 80vh;
+    }
+    #hero .carousel-container {
+      top: 8px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #hero h2 {
+      font-size: 40px;
+  }
+  
+  @media (min-width: 1024px) {
+    #hero .carousel-control-prev, #hero .carousel-control-next {
+      width: 5%;
+    }
+  }
+  
+  @media (max-height: 500px) {
+    #hero {
+      height: 120vh;
+    }
+  }
+  
 
 button.snip0047 {
     font-family: 'Raleway', Arial, sans-serif;
@@ -612,22 +761,7 @@ input[type="color"]:focus,
 
 /* Index page styles */
 
-.customback {
-    background-color: rgba(252, 252, 252, 0.75);
-    padding: 20px;
-}
 
-.customback>h1 {
-    font-family: 'Dancing Script', cursive;
-    color: rgb(252, 86, 3);
-    ;
-}
-
-.customback>p {
-    font-family: 'Dosis', sans-serif;
-    font-weight: 400;
-    color: rgb(49, 14, 1);
-}
 
 #more {
     text-decoration: none;

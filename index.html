@@ -16,6 +16,10 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link href="styles/animate.css/animate.min.css" rel="stylesheet">
+    <link href="styles/remixicon/remixicon.css" rel="stylesheet">
+    <link href="styles/venobox/venobox.css" rel="stylesheet">
+    <link href="styles/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
@@ -26,6 +30,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styles/mystyle.css" type="text/css">
+    
   
   </head>
   <body>
@@ -86,17 +91,67 @@
       <span class="breadcrumb-item active"></span>
     </nav>
 
-    <div class="jumbotron custjumb" style="background-image: url(Images/fairview_building.jpg); background-size: cover;margin-bottom: 0;">
-      <div class="customback">
-        <h1 class="display-4" style="text-shadow: -1px 0 goldenrod, 0 1px gold, 1px 0 white, 0 -1px goldenrod;">Welcome to Ikoyi Fairview Apartments</h1>
-        <p class="lead">At fairview, your comfort and convenience are always our topmost priority. During your stay at Ikoyi Fairview Apartments, you'll be within walking distance of Lagos Motor Boat Club. We offer amazing features like free WiFi in public areas, free self-parking, plus breakfast (surcharge), free WiFi and a flat-screen TV in each room and many more facilities designed for your comfort and relaxation.</p>
-        <hr class="my-2">
-        <p><a href="about.html" id="more">More info</a></p>
+    <section id="hero">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+  
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+  
+        <div class="carousel-inner" role="listbox">
+  
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url(Images/fairview_building.jpg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Ikoyi Fairview</span></h2>
+                <p class="animate__animated animate__fadeInUp">At fairview, your comfort and convenience are always our topmost priority. During your stay at Ikoyi Fairview Apartments, you'll be within walking distance of Lagos Motor Boat Club. We offer amazing features like free WiFi in public areas, free self-parking, plus breakfast (surcharge), free WiFi and a flat-screen TV in each room and many more facilities designed for your comfort and relaxation.</p>
+                <a href="/about.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">View Apartments</h2>
+                <p class="animate__animated animate__fadeInUp">Explore our variety of apartments carefully designed for your comfort, convenience and relaxation. All rooms and suites are exquisitely furnished and equipped with a Kitchen/kitchenette (blenders, crockery, fridge & microwave) except the Standard rooms which is equipped with a fridge & microwave. Of course the air conditioning is really chilly and designed to pamper our guests. We boldly declare that no picture can ever capture the sheer exquisiteness of the rooms and suites. </p>
+                <a href="/apartments.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">View our Apartments</a>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Book a room Now</h2>
+                <p class="animate__animated animate__fadeInUp">Ikoyi Fairview Apartments has a variety of rooms and suites which are by far the lowest priced within Ikoyi & Victoria Island. Our guarantee is this – if you find another hotel in Ikoyi or Victoria Island priced lower than our quoted rates we will not only match such rates but offer a 5% discount on such rates. </p>
+                <a href="/Bookaroom.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Book a Room Now</a>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+  
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+  
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+  
+      </div>
+    </section><!-- End Hero -->
+
+   
         <p class="lead" id="infobtn">
-          <a class="btn btn-primary btn-lg" href="apartments.html" role="button">View our Apartments</a>
+          <a class="btn btn-primary btn-lg" href="apartments.html" role="button"></a>
         </p>
         <p class="lead" id="infobtn2">
-          <a class="btn btn-primary btn-lg" href="Bookaroom.html" role="button">Book a Room Now</a>
+          <a class="btn btn-primary btn-lg" href="Bookaroom.html" role="button"></a>
         </p>
       </div>
     </div>
@@ -262,6 +317,9 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <script src="styles/owl.carousel/owl.carousel.min.js"></script>
+
     <script>
       const $dropdown = $(".dropdown");
       const $dropdownToggle = $(".dropdown-toggle");
